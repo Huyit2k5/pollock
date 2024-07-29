@@ -1,0 +1,7 @@
+@use "../abstracts/" as abst;
+.main-product {
+    background-color: abst.$background-light;
+}
+.main-footer {
+    background-color: abst.$gray-footer;
+}

@@ -1,0 +1,30 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Pollock
+        link(rel='preconnect' href='https://fonts.googleapis.com')
+        link(rel='preconnect' href='https://fonts.gstatic.com' crossorigin='')
+        link(href='https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap' rel='stylesheet')
+        link(rel="stylesheet", href="app.css")
+        block stylesheet 
+            link(rel="stylesheet", href="./styles/app.css")
+    body 
+        .wrapper 
+            header.header 
+                .container 
+                    include ./_topbar
+            .container 
+                block main
+            .main-product 
+                .container 
+                    include ../module/home/_product
+            .container 
+                include ../module/home/_explore
+            .main-product 
+                .container 
+                    include ../module/home/_contact
+            footer.main-footer 
+                .container 
+                    include ../module/home/_footer

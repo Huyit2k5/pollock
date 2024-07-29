@@ -1,0 +1,56 @@
+@use "../../abstracts/" as abst;
+.contact {
+    position: relative;
+    padding-bottom: 100px;
+    &-title {
+        font-size: 48px;
+        font-weight: 500;
+        line-height: calc(56/48);
+        letter-spacing: -2px;
+        text-align: center;
+        color: abst.$text-heading;
+        padding-top: 106px;
+    }
+    &-text {
+        font-size: 22px;
+        line-height: calc(32/22);
+        letter-spacing: -1px;
+        text-align: center;
+        margin-top: 30px;
+        color: abst.$text-nav;
+    }
+    &-button {// cần sửa
+        display: inline-block;
+        margin-top: 65px;
+        margin-left: 400px;
+    }
+    &-shape10 {
+        position: absolute;
+        bottom: 100px;
+    }
+    &-shape11 {
+        position: absolute;
+        bottom: 196px;
+        left: 40px;
+    }
+    &-shape12 {
+        position: absolute;
+        top: 70px;
+        left: -50px;
+    }
+    &-shape13 {
+        position: absolute;
+        top: 130px;
+        right: 35px;
+    }
+    &-shape14 {
+        position: absolute;
+        right: 0;
+        bottom: 100px;
+    }
+    &-shape15 {
+        position: absolute;
+        right: -150px;
+        top: 139px;
+    }
+}

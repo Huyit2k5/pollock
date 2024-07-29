@@ -1,0 +1,141 @@
+@use "../abstracts/" as abst;
+.topbar {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    &-logo {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    &-text {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: calc(32/24);
+        letter-spacing: -0.4;
+        color: abst.$text-heading;
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+}
+.button {
+    padding: 13px 24px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    &-list {
+        font-weight: 500;
+        line-height: calc(24/15);
+        text-transform: uppercase;
+        color: abst.$text-nav;
+    }
+}
+.content {
+    position: relative;
+    margin-top: 150px;
+    padding-bottom: 200px;
+    display: flex;
+    align-items: center;
+    &-left {
+        // max-width: 690px;
+    }
+    &-title {
+        font-size: 65px;
+        font-weight: 500;
+        line-height: calc(78/65);
+        span {
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            background-image: abst.$gradient;
+        }
+    }
+    &-text {
+        max-width: 660px;
+        margin-top: 40px;
+        font-size: 18px;
+        line-height: calc(28/18);
+        color: abst.$text-nav;
+    }
+    &-button {
+        margin-top: 86px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &-play {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+    &-icon {
+        padding: 16px;
+        background-color: white;
+        border-radius: 100rem;
+        box-shadow: 0px 5px 20px rgba(18, 2, 47, 0.15);
+    }
+    &-work {
+        font-weight: 500;
+        line-height: calc(24/15);
+        text-transform: uppercase;
+        color: abst.$text-heading;
+    }
+}
+.shape1 {
+    position: absolute;
+    width: 125px;
+    height: 125px;
+    right: 50px;
+    top: 250px;
+}
+.shape2 {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 450px;
+    right: 500px;
+}
+.shape3 {
+    position: absolute;
+    left: 50px;
+    top: 150px;
+}
+.shape5 {
+    position: absolute;
+    left: 150px;
+    top: 400px;
+}
+.shape6 {
+    position: absolute;
+    left: 625px;
+    top: 100px;
+}
+.shape7 {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+.shape8 {
+    position: absolute;
+    right: 120px;
+    top: 600px;
+}
+.shape9 {
+    position: absolute;
+    left: 450px;
+    top: 700px;
+}
+.button-down {
+    display: inline-block;
+    padding: 28px;
+    background-color: abst.$icon-organ;
+    border-radius: 100rem;
+    box-shadow: 0px 5px 20px rgba(18, 2, 47, 0.15);
+    transform: translateY(40px);
+    margin-left: 460px;
+}

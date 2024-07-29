@@ -1,0 +1,71 @@
+@use "../../abstracts" as abst;
+.service {
+    margin-top: 110px;
+    &-title {
+        font-size: 60px;
+        font-weight: 500;
+        line-height: calc(72/60);
+        color: abst.$text-heading;
+        text-align: center;
+    }
+    &-text {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: calc(28/18);
+        color: abst.$text-nav;
+        text-align: center;
+    }
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(3,minmax(0,1fr));
+        grid-gap: 30px;
+        margin-top: 80px;
+        margin-bottom: 70px;
+    }
+    &-item {
+        // padding: 130px 120px;
+        text-align: center;
+        border-radius: 20px;
+        border: 1px solid rgba(97, 119, 152, 0.20);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px 15px 60px;
+        &:hover {
+            box-shadow: 0px 20px 50px 0px rgba(79, 119, 255, 0.20);
+        }
+    }
+    &-heading {
+        margin-top: 20px;
+        font-size: 22px;
+        line-height: calc(32/22);
+        color: abst.$primary-black;
+        letter-spacing: -1px;
+    }
+    &-content {
+        margin-top: 40px;
+        font-size: 16px;
+        line-height: calc(26/16);
+        color: abst.$text-nav;
+    }
+    &-button {// cần được xử lí lại
+        margin-left: 400px;
+    }
+    &-brand {
+        margin-top: 120px;
+        font-size: 36px;
+        line-height: calc(46/36);
+        letter-spacing: -1px;
+        color: abst.$color-black;
+        text-align: center;
+        font-weight: 500;
+    }
+    &-support {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 105px;
+        margin-top: 81px;
+        padding-bottom: 120px;
+    }
+}

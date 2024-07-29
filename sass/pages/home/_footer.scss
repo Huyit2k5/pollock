@@ -1,0 +1,90 @@
+@use "../../abstracts/" as abst;
+.footer {
+    &-top {
+    padding-top: 105px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    }
+    &-logo {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        margin-right: 30px;
+    }
+    &-text {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: calc(32/24);
+        letter-spacing: -0.4px;
+        color: abst.$white;
+    }
+    &-heading {
+        font-size: 22px;
+        line-height: calc(32/22);
+        letter-spacing: -1px;
+        color: abst.$white;
+        margin-bottom: 20px;
+    }
+    &-menu {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        font-size: 14px;
+        line-height: calc(24/14);
+        letter-spacing: -0.3px;
+        text-transform: uppercase;
+        color: abst.$text-gray;
+    }
+    &-sub {
+        font-size: 16px;
+        line-height: calc(26/16);
+        color: abst.$text-gray;
+        margin-bottom: 25px;
+    }
+    &-comment {
+        max-width: 360px;
+    }
+    &-email {
+        display: flex;
+        height: 48px;
+    }
+    &-input {
+        all: unset;
+        background-color: #fff;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 11px 18px;
+        color: abst.$text-nav;
+    }
+    &-button {
+        margin-left: 6px;
+    }
+    &-attend {
+        margin-top: 25px;
+        font-size: 14px;
+        line-height: calc(24/14);
+        letter-spacing: -0.3px;
+        color: abst.$text-gray;
+    }
+    &-bottom {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(123, 136, 168, 0.3);
+        padding: 40px 0;
+    }
+    &-copyright {
+        font-size: 16px;
+        line-height: calc(26/16);
+        color: abst.$text-gray;
+    }
+    &-links {
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+}
